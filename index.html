@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sobre Conceitos de OOP em Python</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .correct {
+            background-color: #4CAF50; /* Verde */
+        }
+        .wrong {
+            background-color: #f44336; /* Vermelho */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-8">
+
+    <div class="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <h1 class="text-2xl font-bold mb-4 text-center">Quiz sobre Conceitos de OOP</h1>
+
+        <div id="quiz-container">
+            <!-- Pergunta 1 - Encapsulamento -->
+            <div class="mb-4">
+                <p class="font-semibold">1. O que é encapsulamento em OOP?</p>
+                <div class="space-y-2">
+                    <label class="block">
+                        <input type="radio" name="q1" value="correct" class="mr-2"> O processo de esconder os detalhes internos de uma classe e expor apenas a interface necessária
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q1" value="wrong" class="mr-2"> A capacidade de herdar atributos de várias classes
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q1" value="wrong" class="mr-2"> O processo de criar novas instâncias de objetos
+                    </label>
+                </div>
+            </div>
+
+            <!-- Pergunta 2 - Abstração -->
+            <div class="mb-4">
+                <p class="font-semibold">2. Qual é a principal característica da abstração?</p>
+                <div class="space-y-2">
+                    <label class="block">
+                        <input type="radio" name="q2" value="wrong" class="mr-2"> Mostrar todos os detalhes internos da implementação
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q2" value="correct" class="mr-2"> Esconder os detalhes internos e mostrar apenas a interface necessária
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q2" value="wrong" class="mr-2"> Permitir que a classe herde atributos de outra classe
+                    </label>
+                </div>
+            </div>
+
+            <!-- Pergunta 3 - Herança -->
+            <div class="mb-4">
+                <p class="font-semibold">3. O que a herança permite em OOP?</p>
+                <div class="space-y-2">
+                    <label class="block">
+                        <input type="radio" name="q3" value="correct" class="mr-2"> Reutilizar código e criar hierarquias de classes
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q3" value="wrong" class="mr-2"> Permitir que objetos de diferentes classes tenham o mesmo comportamento
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q3" value="wrong" class="mr-2"> Esconder os detalhes internos de uma classe
+                    </label>
+                </div>
+            </div>
+
+            <!-- Pergunta 4 - Polimorfismo -->
+            <div class="mb-4">
+                <p class="font-semibold">4. O que é polimorfismo em OOP?</p>
+                <div class="space-y-2">
+                    <label class="block">
+                        <input type="radio" name="q4" value="correct" class="mr-2"> A capacidade de um método ter comportamentos diferentes em classes diferentes
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q4" value="wrong" class="mr-2"> A capacidade de uma classe ter múltiplos construtores
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q4" value="wrong" class="mr-2"> A capacidade de herdar atributos de várias classes
+                    </label>
+                </div>
+            </div>
+
+            <!-- Pergunta 5 - Encapsulamento -->
+            <div class="mb-4">
+                <p class="font-semibold">5. Qual é a vantagem do encapsulamento?</p>
+                <div class="space-y-2">
+                    <label class="block">
+                        <input type="radio" name="q5" value="correct" class="mr-2"> Controlar o acesso a dados e evitar alterações indesejadas
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q5" value="wrong" class="mr-2"> Permitir que uma classe herde métodos de várias outras
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q5" value="wrong" class="mr-2"> Melhorar o desempenho do código
+                    </label>
+                </div>
+            </div>
+
+            <!-- Pergunta 6 - Abstração -->
+            <div class="mb-4">
+                <p class="font-semibold">6. O que significa que a abstração simplifica o uso do objeto?</p>
+                <div class="space-y-2">
+                    <label class="block">
+                        <input type="radio" name="q6" value="wrong" class="mr-2"> Mostrar todos os detalhes da implementação interna
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q6" value="correct" class="mr-2"> Esconder os detalhes desnecessários e permitir que o usuário interaja com a interface simples
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q6" value="wrong" class="mr-2"> Permitir que diferentes objetos se comportem da mesma maneira
+                    </label>
+                </div>
+            </div>
+
+            <!-- Pergunta 7 - Polimorfismo -->
+            <div class="mb-4">
+                <p class="font-semibold">7. O polimorfismo é útil porque permite:</p>
+                <div class="space-y-2">
+                    <label class="block">
+                        <input type="radio" name="q7" value="correct" class="mr-2"> Que métodos com o mesmo nome tenham comportamentos diferentes dependendo da classe
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q7" value="wrong" class="mr-2"> Que um método construtor seja chamado automaticamente
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q7" value="wrong" class="mr-2"> Que uma classe herde atributos de várias classes ao mesmo tempo
+                    </label>
+                </div>
+            </div>
+
+            <button id="submit" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg">Enviar</button>
+        </div>
+
+        <div id="result" class="mt-4"></div>
+
+        <div id="explanation" class="mt-8 p-4 bg-gray-200 rounded-lg">
+            <h2 class="text-xl font-semibold">Explicações sobre os conceitos de OOP:</h2>
+            <ul class="list-disc pl-5 mt-3">
+                <li><strong>Encapsulamento</strong>: Protege os atributos e métodos internos de uma classe, permitindo que sejam acessados apenas por meio de métodos definidos (getters e setters). Isso ajuda a manter a integridade do objeto.</li>
+                <li><strong>Abstração</strong>: Esconde os detalhes internos de implementação e expõe apenas as funcionalidades essenciais, simplificando o uso do objeto.</li>
+                <li><strong>Herança</strong>: Permite que uma classe herde atributos e métodos de outra classe, evitando repetição de código e facilitando a reutilização de funcionalidades.</li>
+                <li><strong>Polimorfismo</strong>: Permite que métodos tenham comportamentos diferentes dependendo da classe em que são chamados, tornando o código mais flexível e reutilizável.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("submit").addEventListener("click", function() {
+            const resultDiv = document.getElementById("result");
+            let score = 0;
+
+            // Loop através de cada pergunta para verificar as respostas
+            for (let i = 1; i <= 7; i++) {
+                const selectedAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+
+                if (selectedAnswer) {
+                    if (selectedAnswer.value === "correct") {
+                        score++;
+                        selectedAnswer.parentElement.classList.add("correct");
+                    } else {
+                        selectedAnswer.parentElement.classList.add("wrong");
+                    }
+                }
+            }
+
+            // Mostrar o resultado
+            resultDiv.innerHTML = `<p class="text-xl font-semibold">Você acertou ${score} de 7</p>`;
+        });
+    </script>
+
+</body>
+</html>
