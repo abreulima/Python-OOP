@@ -132,6 +132,54 @@
                 </div>
             </div>
 
+            <!-- Pergunta 8 - Inicialização de Classe -->
+            <div class="mb-4">
+                <p class="font-semibold">8. O que é o método __init__ em uma classe Python?</p>
+                <div class="space-y-2">
+                    <label class="block">
+                        <input type="radio" name="q8" value="correct" class="mr-2"> O método que é chamado automaticamente quando um objeto é criado
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q8" value="wrong" class="mr-2"> O método que define os atributos de uma classe
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q8" value="wrong" class="mr-2"> O método que inicializa as variáveis de classe
+                    </label>
+                </div>
+            </div>
+
+            <!-- Pergunta 9 - Criação de Objetos -->
+            <div class="mb-4">
+                <p class="font-semibold">9. Como você cria um objeto de uma classe em Python?</p>
+                <div class="space-y-2">
+                    <label class="block">
+                        <input type="radio" name="q9" value="correct" class="mr-2"> Usando a sintaxe: `objeto = NomeClasse()`
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q9" value="wrong" class="mr-2"> Usando a sintaxe: `objeto = NomeClasse[]`
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q9" value="wrong" class="mr-2"> Usando a sintaxe: `objeto = NomeClasse{}`
+                    </label>
+                </div>
+            </div>
+
+            <!-- Pergunta 10 - Chamar Método de uma Classe -->
+            <div class="mb-4">
+                <p class="font-semibold">10. Como você chama um método de uma classe em Python?</p>
+                <div class="space-y-2">
+                    <label class="block">
+                        <input type="radio" name="q10" value="correct" class="mr-2"> Usando a sintaxe: `objeto.metodo()`
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q10" value="wrong" class="mr-2"> Usando a sintaxe: `metodo.objeto()`
+                    </label>
+                    <label class="block">
+                        <input type="radio" name="q10" value="wrong" class="mr-2"> Usando a sintaxe: `NomeClasse.metodo()`
+                    </label>
+                </div>
+            </div>
+
             <button id="submit" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg">Enviar</button>
         </div>
 
@@ -154,7 +202,7 @@
             let score = 0;
 
             // Loop através de cada pergunta para verificar as respostas
-            for (let i = 1; i <= 7; i++) {
+            for (let i = 1; i <= 10; i++) {
                 const selectedAnswer = document.querySelector(`input[name="q${i}"]:checked`);
 
                 if (selectedAnswer) {
@@ -168,7 +216,7 @@
             }
 
             // Mostrar o resultado
-            resultDiv.innerHTML = `<p class="text-xl font-semibold">Você acertou ${score} de 7</p>`;
+            resultDiv.innerHTML = `<p class="text-xl font-semibold">Você acertou ${score} de 10</p>`;
         });
     </script>
 
